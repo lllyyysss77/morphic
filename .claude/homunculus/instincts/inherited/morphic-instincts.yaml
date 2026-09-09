@@ -1,0 +1,475 @@
+# Instincts generated from https://github.com/lllyyysss77/morphic
+# Generated: 2026-08-01T13:03:32.882Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: morphic-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/lllyyysss77/morphic
+---
+
+# Morphic Commit Length
+
+## Action
+
+Write moderate-length commit messages (~56 characters)
+
+## Evidence
+
+- Average commit message length: 56 chars
+- Based on 6 commits
+
+---
+id: morphic-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/lllyyysss77/morphic
+---
+
+# Morphic Naming Files
+
+## Action
+
+Use kebab-case naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: kebab-case
+
+---
+id: morphic-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/lllyyysss77/morphic
+---
+
+# Morphic Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: morphic-test-framework
+trigger: "when writing tests"
+confidence: 0.9
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/lllyyysss77/morphic
+---
+
+# Morphic Test Framework
+
+## Action
+
+Use vitest as the test framework
+
+## Evidence
+
+- Test framework detected: vitest
+- File pattern: *.test.ts
+
+---
+id: morphic-test-naming
+trigger: "when creating a test file"
+confidence: 0.85
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/lllyyysss77/morphic
+---
+
+# Morphic Test Naming
+
+## Action
+
+Name test files using the pattern: *.test.ts
+
+## Evidence
+
+- File pattern: *.test.ts
+- Consistent across test files
+
+---
+id: morphic-test-mocking
+trigger: "when mocking dependencies in tests"
+confidence: 0.75
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/lllyyysss77/morphic
+---
+
+# Morphic Test Mocking
+
+## Action
+
+Use vi.mock for mocking
+
+## Evidence
+
+- Mocking pattern detected: vi.mock
+- Consistent across test files
+
+---
+id: morphic-test-types
+trigger: "when planning tests for a feature"
+confidence: 0.7
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/lllyyysss77/morphic
+---
+
+# Morphic Test Types
+
+## Action
+
+Write unit, integration tests to match project standards
+
+## Evidence
+
+- Test types detected: unit, integration
+- Coverage config: no
+
+---
+id: morphic-workflow-feature-implementation-with-analytics-or-rate-limit
+trigger: "when doing feature implementation with analytics or rate limit"
+confidence: 0.6
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/lllyyysss77/morphic
+---
+
+# Morphic Workflow Feature Implementation With Analytics Or Rate Limit
+
+## Action
+
+Follow the feature-implementation-with-analytics-or-rate-limit workflow:
+1. Implement or update chat limit logic in lib/rate-limit/chat-limits.ts
+2. Add or update analytics event tracking in lib/analytics/*
+3. Fix or improve event delivery and test coverage in related files
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~2x per month
+- Files: lib/rate-limit/chat-limits.ts, lib/analytics/index.ts, lib/analytics/track-chat-limit-event.ts
+
+---
+id: morphic-workflow-feature-refactor-with-test-update
+trigger: "when doing feature refactor with test update"
+confidence: 0.6
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/lllyyysss77/morphic
+---
+
+# Morphic Workflow Feature Refactor With Test Update
+
+## Action
+
+Follow the feature-refactor-with-test-update workflow:
+1. Refactor or optimize core logic in implementation files
+2. Update or add corresponding test files in __tests__ directories
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~2x per month
+- Files: lib/streaming/helpers/*.ts, lib/streaming/create-chat-stream-response.ts, lib/streaming/create-ephemeral-chat-stream-response.ts
+
+---
+id: morphic-instinct-file-naming
+trigger: "When creating or renaming a file"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: lllyyysss77/morphic
+---
+
+# Morphic Instinct File Naming
+
+## Action
+
+Use kebab-case for file names
+
+## Evidence
+
+- Pattern in namingConventions.files
+- All files in lib/ use kebab-case
+
+---
+id: morphic-instinct-function-naming
+trigger: "When defining a function"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: lllyyysss77/morphic
+---
+
+# Morphic Instinct Function Naming
+
+## Action
+
+Use camelCase for function names
+
+## Evidence
+
+- Pattern in namingConventions.functions
+- Functions in lib/streaming/helpers/*.ts use camelCase
+
+---
+id: morphic-instinct-class-naming
+trigger: "When defining a class"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: lllyyysss77/morphic
+---
+
+# Morphic Instinct Class Naming
+
+## Action
+
+Use PascalCase for class names
+
+## Evidence
+
+- Pattern in namingConventions.classes
+- Classes in lib/agents/title-generator.ts use PascalCase
+
+---
+id: morphic-instinct-constant-naming
+trigger: "When defining a constant"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: lllyyysss77/morphic
+---
+
+# Morphic Instinct Constant Naming
+
+## Action
+
+Use SCREAMING_SNAKE_CASE for constant names
+
+## Evidence
+
+- Pattern in namingConventions.constants
+- Constants in lib/analytics/index.ts use SCREAMING_SNAKE_CASE
+
+---
+id: morphic-instinct-import-style
+trigger: "When importing modules"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: lllyyysss77/morphic
+---
+
+# Morphic Instinct Import Style
+
+## Action
+
+Use mixed import styles as appropriate (default and named imports)
+
+## Evidence
+
+- Pattern in importStyle: mixed
+- Imports in lib/streaming/create-chat-stream-response.ts
+
+---
+id: morphic-instinct-export-style
+trigger: "When exporting modules or functions"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: lllyyysss77/morphic
+---
+
+# Morphic Instinct Export Style
+
+## Action
+
+Use named exports
+
+## Evidence
+
+- Pattern in exportStyle: named
+- Exports in lib/analytics/index.ts
+
+---
+id: morphic-instinct-test-file-pattern
+trigger: "When creating a test file"
+confidence: 0.9
+domain: testing
+source: repo-analysis
+source_repo: lllyyysss77/morphic
+---
+
+# Morphic Instinct Test File Pattern
+
+## Action
+
+Name the file with the pattern *.test.ts
+
+## Evidence
+
+- Pattern in testing.filePattern
+- Files in lib/streaming/__tests__/*.test.ts
+
+---
+id: morphic-instinct-test-location
+trigger: "When adding or updating tests"
+confidence: 0.85
+domain: testing
+source: repo-analysis
+source_repo: lllyyysss77/morphic
+---
+
+# Morphic Instinct Test Location
+
+## Action
+
+Place test files in __tests__ directories within the relevant feature folder
+
+## Evidence
+
+- Pattern in architecture.folderStructure.testLocation: mixed
+- Files in lib/streaming/__tests__/*.test.ts
+
+---
+id: morphic-instinct-test-framework
+trigger: "When writing tests"
+confidence: 0.9
+domain: testing
+source: repo-analysis
+source_repo: lllyyysss77/morphic
+---
+
+# Morphic Instinct Test Framework
+
+## Action
+
+Use vitest as the testing framework
+
+## Evidence
+
+- Pattern in testing.framework: vitest
+- Imports from 'vitest' in test files
+
+---
+id: morphic-instinct-mocking-style
+trigger: "When mocking modules in tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: lllyyysss77/morphic
+---
+
+# Morphic Instinct Mocking Style
+
+## Action
+
+Use vi.mock for mocking
+
+## Evidence
+
+- Pattern in testing.mockingStyle: vi.mock
+- Usage in lib/streaming/__tests__/*.test.ts
+
+---
+id: morphic-instinct-git-commit-prefix
+trigger: "When writing a commit message"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: lllyyysss77/morphic
+---
+
+# Morphic Instinct Git Commit Prefix
+
+## Action
+
+Start commit messages with 'feat' or 'fix' to indicate feature or bugfix
+
+## Evidence
+
+- Pattern in commits.prefixes
+- Examples: 'feat: make overall daily chat limit configurable via env (#919)', 'fix(analytics): deliver rate-limit events via after() (#921)'
+
+---
+id: morphic-instinct-git-commit-format
+trigger: "When writing a commit message"
+confidence: 0.85
+domain: git
+source: repo-analysis
+source_repo: lllyyysss77/morphic
+---
+
+# Morphic Instinct Git Commit Format
+
+## Action
+
+Use the format: <type>(<scope>): <description> (#issue)
+
+## Evidence
+
+- Pattern in commits.examples
+- Examples: 'fix(analytics): deliver rate-limit events via after() (#921)'
+
+---
+id: morphic-instinct-feature-analytics-workflow
+trigger: "When adding or modifying a chat limit or analytics feature"
+confidence: 0.9
+domain: workflow
+source: repo-analysis
+source_repo: lllyyysss77/morphic
+---
+
+# Morphic Instinct Feature Analytics Workflow
+
+## Action
+
+Update chat limit logic, add analytics tracking, and fix event delivery/tests in relevant files
+
+## Evidence
+
+- Workflow: feature-implementation-with-analytics-or-rate-limit
+- Files: lib/rate-limit/chat-limits.ts, lib/analytics/index.ts, lib/analytics/track-chat-limit-event.ts, lib/rate-limit/__tests__/*.ts, lib/rate-limit/adaptive-limit.ts
+- Commit sequence in workflow
+
+---
+id: morphic-instinct-feature-refactor-test-workflow
+trigger: "When refactoring or optimizing core logic"
+confidence: 0.85
+domain: workflow
+source: repo-analysis
+source_repo: lllyyysss77/morphic
+---
+
+# Morphic Instinct Feature Refactor Test Workflow
+
+## Action
+
+Update implementation files and add or update corresponding test files in __tests__ directories
+
+## Evidence
+
+- Workflow: feature-refactor-with-test-update
+- Files: lib/streaming/helpers/*.ts, lib/streaming/create-chat-stream-response.ts, lib/streaming/create-ephemeral-chat-stream-response.ts, lib/streaming/__tests__/*.test.ts, lib/agents/title-generator.ts, lib/agents/__tests__/title-generator.test.ts
+- Commit sequence in workflow
+
